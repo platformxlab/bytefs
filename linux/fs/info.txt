@@ -1,0 +1,76 @@
+aio.c:	inode->i_mapping->private_data = ctx;
+aio.c:	struct address_space *i_mapping;
+aio.c:		i_mapping = aio_ring_file->f_mapping;
+aio.c:		spin_lock(&i_mapping->private_lock);
+aio.c:		i_mapping->private_data = NULL;
+aio.c:		spin_unlock(&i_mapping->private_lock);
+anon_inodes.c:	file->f_mapping = anon_inode_inode->i_mapping;
+block_dev.c:	struct address_space *mapping = bdev->bd_inode->i_mapping;
+block_dev.c:	struct address_space *mapping = bdev->bd_inode->i_mapping;
+block_dev.c:		return filemap_flush(bdev->bd_inode->i_mapping);
+block_dev.c:	return filemap_write_and_wait(bdev->bd_inode->i_mapping);
+block_dev.c:		ret += bdev->bd_inode->i_mapping->nrpages;
+block_dev.c:			 * So, we can access it via ->i_mapping always
+block_dev.c:			inode->i_mapping = bdev->bd_inode->i_mapping;
+block_dev.c:	inode->i_mapping = &inode->i_data;
+block_dev.c:	filp->f_mapping = bdev->bd_inode->i_mapping;
+block_dev.c:	mapping = bdev->bd_inode->i_mapping;
+block_dev.c:		struct address_space *mapping = inode->i_mapping;
+buffer.c:	struct address_space *bd_mapping = bd_inode->i_mapping;
+buffer.c: * management of a list of dependent buffers at ->i_mapping->private_list.
+buffer.c:	struct address_space *mapping = inode->i_mapping;
+buffer.c:	gfp_mask = mapping_gfp_constraint(inode->i_mapping, ~__GFP_FS) | gfp;
+buffer.c:	page = find_or_create_page(inode->i_mapping, index, gfp_mask);
+buffer.c:	spin_lock(&inode->i_mapping->private_lock);
+buffer.c:	spin_unlock(&inode->i_mapping->private_lock);
+buffer.c:	struct address_space *bd_mapping = bd_inode->i_mapping;
+buffer.c:	struct address_space *mapping = inode->i_mapping;
+buffer.c:	if ((page->mapping != inode->i_mapping) ||
+char_dev.c:	inode->i_mapping = &inode->i_data;
+dax.c:		invalidate_inode_pages2_range(inode->i_mapping,
+direct-io.c:	errseq_set(&inode->i_mapping->wb_err, -EIO);
+direct-io.c:	    dio->inode->i_mapping->nrpages) {
+direct-io.c:		err = invalidate_inode_pages2_range(dio->inode->i_mapping,
+direct-io.c:					    dio->inode->i_mapping->nrpages);
+drop_caches.c:		    (inode->i_mapping->nrpages == 0 && !need_resched())) {
+drop_caches.c:		invalidate_mapping_pages(inode->i_mapping, 0, -1);
+file_table.c:	file->f_mapping = path->dentry->d_inode->i_mapping;
+fs-writeback.c:	struct address_space *mapping = inode->i_mapping;
+fs-writeback.c:	if (mapping_tagged(inode->i_mapping, PAGECACHE_TAG_DIRTY)) {
+fs-writeback.c:	struct address_space *mapping = inode->i_mapping;
+fs-writeback.c:	     !mapping_tagged(inode->i_mapping, PAGECACHE_TAG_WRITEBACK)))
+fs-writeback.c:		struct address_space *mapping = inode->i_mapping;
+fs-writeback.c:	if (!mapping_cap_writeback_dirty(inode->i_mapping))
+inode.c:	inode->i_mapping = mapping;
+inode.c: *	for allocations related to inode->i_mapping is GFP_HIGHUSER_MOVABLE.
+inode.c:	if (inode->i_mapping->a_ops->bmap)
+inode.c:		res = inode->i_mapping->a_ops->bmap(inode->i_mapping, block);
+inode.c:	mapping_set_gfp_mask(inode->i_mapping, GFP_USER);
+ioctl.c:		filemap_write_and_wait(inode->i_mapping);
+iomap.c:		if (!add_to_page_cache_lru(page, inode->i_mapping, page->index,
+iomap.c:	page = grab_cache_page_write_begin(inode->i_mapping, index, flags);
+iomap.c:		ret = generic_write_end(NULL, inode->i_mapping, pos, len,
+iomap.c:		if (mapping_writably_mapped(inode->i_mapping))
+iomap.c:		balance_dirty_pages_ratelimited(inode->i_mapping);
+iomap.c:	struct address_space *mapping = inode->i_mapping;
+iomap.c:		balance_dirty_pages_ratelimited(inode->i_mapping);
+iomap.c:	if ((page->mapping != inode->i_mapping) ||
+iomap.c:		ret = filemap_write_and_wait(inode->i_mapping);
+iomap.c:	const struct address_space_operations *ops = inode->i_mapping->a_ops;
+iomap.c:	if (unlikely(page->mapping != inode->i_mapping))
+iomap.c:		nr_pages = pagevec_lookup_range(&pvec, inode->i_mapping, &index,
+iomap.c:	    (dio->flags & IOMAP_DIO_WRITE) && inode->i_mapping->nrpages) {
+iomap.c:		err = invalidate_inode_pages2_range(inode->i_mapping,
+libfs.c:	stat->blocks = inode->i_mapping->nrpages << (PAGE_SHIFT - 9);
+libfs.c:	ret = sync_mapping_buffers(inode->i_mapping);
+libfs.c:	inode->i_mapping->a_ops = &anon_aops;
+namei.c:	struct address_space *mapping = inode->i_mapping;
+namei.c:	struct address_space *mapping = inode->i_mapping;
+namei.c:			!mapping_gfp_constraint(inode->i_mapping, __GFP_FS));
+open.c:	f->f_mapping = inode->i_mapping;
+open.c:	file_ra_state_init(&f->f_ra, f->f_mapping->host->i_mapping);
+read_write.c:	page = read_mapping_page(inode->i_mapping, offset >> PAGE_SHIFT, NULL);
+read_write.c:	ret = filemap_write_and_wait_range(inode_in->i_mapping,
+read_write.c:	ret = filemap_write_and_wait_range(inode_out->i_mapping,
+sync.c:	filemap_fdatawrite(bdev->bd_inode->i_mapping);
+sync.c:	filemap_fdatawait_keep_errors(bdev->bd_inode->i_mapping);
