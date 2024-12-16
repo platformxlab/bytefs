@@ -1,0 +1,48 @@
+============= ByteFS report =============
+  Issue count
+    Block issue count:      0          = R: 0          + W: 0          
+    Byte issue count:       0          = R: 0          + W: 0          
+  Traffic
+    Block issue traffic:    0                    = R: 0                    + W: 0                    
+    Byte issue traffic:     0                    = R: 0                    + W: 0                    
+  Metadata
+    Block issue traffic:    0                   
+    Byte issue traffic:     0                   
+    Inode traffic:          0                   
+    Superblock traffic:     0                   
+    Bitmap traffic:         0                   
+    Journal traffic:        0                   
+  Data
+    Block data traffic:     0                   
+    Byte data traffic:      0                   
+  Log
+    Write operation:        0                   
+    Read operation:         0                   
+    Read partial hit:       0                   
+    Read log hit:           0                   
+    Direct NAND read:       0                   
+    Coalescing NAND read:   0                   
+    NAND write:             0                   
+    Log append:             0                   
+    Log flush:              0                   
+  Latency
+    Total read latency:     0                   
+    Total write latency:    0                   
+    Total program latency:  0                   
+========== ByteFS rw modification distribution ==========
+  2%: r    -nan%, w    -nan%     3%: r    -nan%, w    -nan%     5%: r    -nan%, w    -nan%     6%: r    -nan%, w    -nan%   
+  8%: r    -nan%, w    -nan%     9%: r    -nan%, w    -nan%    11%: r    -nan%, w    -nan%    12%: r    -nan%, w    -nan%   
+ 14%: r    -nan%, w    -nan%    16%: r    -nan%, w    -nan%    17%: r    -nan%, w    -nan%    19%: r    -nan%, w    -nan%   
+ 20%: r    -nan%, w    -nan%    22%: r    -nan%, w    -nan%    23%: r    -nan%, w    -nan%    25%: r    -nan%, w    -nan%   
+ 27%: r    -nan%, w    -nan%    28%: r    -nan%, w    -nan%    30%: r    -nan%, w    -nan%    31%: r    -nan%, w    -nan%   
+ 33%: r    -nan%, w    -nan%    34%: r    -nan%, w    -nan%    36%: r    -nan%, w    -nan%    38%: r    -nan%, w    -nan%   
+ 39%: r    -nan%, w    -nan%    41%: r    -nan%, w    -nan%    42%: r    -nan%, w    -nan%    44%: r    -nan%, w    -nan%   
+ 45%: r    -nan%, w    -nan%    47%: r    -nan%, w    -nan%    48%: r    -nan%, w    -nan%    50%: r    -nan%, w    -nan%   
+ 52%: r    -nan%, w    -nan%    53%: r    -nan%, w    -nan%    55%: r    -nan%, w    -nan%    56%: r    -nan%, w    -nan%   
+ 58%: r    -nan%, w    -nan%    59%: r    -nan%, w    -nan%    61%: r    -nan%, w    -nan%    62%: r    -nan%, w    -nan%   
+ 64%: r    -nan%, w    -nan%    66%: r    -nan%, w    -nan%    67%: r    -nan%, w    -nan%    69%: r    -nan%, w    -nan%   
+ 70%: r    -nan%, w    -nan%    72%: r    -nan%, w    -nan%    73%: r    -nan%, w    -nan%    75%: r    -nan%, w    -nan%   
+ 77%: r    -nan%, w    -nan%    78%: r    -nan%, w    -nan%    80%: r    -nan%, w    -nan%    81%: r    -nan%, w    -nan%   
+ 83%: r    -nan%, w    -nan%    84%: r    -nan%, w    -nan%    86%: r    -nan%, w    -nan%    88%: r    -nan%, w    -nan%   
+ 89%: r    -nan%, w    -nan%    91%: r    -nan%, w    -nan%    92%: r    -nan%, w    -nan%    94%: r    -nan%, w    -nan%   
+ 95%: r    -nan%, w    -nan%    97%: r    -nan%, w    -nan%    98%: r    -nan%, w    -nan%   100%: r    -nan%, w    -nan%   

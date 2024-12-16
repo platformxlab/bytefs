@@ -1,0 +1,17 @@
+Filebench Version 1.5-alpha3
+0.000: Allocated 177MB of shared memory
+0.011: MakeDirs Version 1.0 personality successfully loaded
+0.011: Populating and pre-allocating filesets
+0.559: bigfileset populated: 0 files, avg. dir. width = 100, avg. dir. depth = 3.0, 1000000 leafdirs, 0.000MB total size
+0.559: Removing bigfileset tree (if exists)
+0.562: Pre-allocating directories in bigfileset tree
+1.063: Pre-allocating files in bigfileset tree
+2.748: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+2.749: Population and pre-allocation of filesets completed
+2.749: Starting 1 dirmake instances
+3.753: Running...
+43.759: Run took 40 seconds...
+43.759: Per-Operation Breakdown
+mkdir1               1000000ops    24996ops/s   0.0mb/s    0.309ms/op [0.038ms - 17.150ms]
+43.759: IO Summary: 1000000 ops 24996.063 ops/s 0/0 rd/wr   0.0mb/s 0.309ms/op
+43.759: Shutting down processes

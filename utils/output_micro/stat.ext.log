@@ -1,0 +1,17 @@
+Filebench Version 1.5-alpha3
+0.000: Allocated 177MB of shared memory
+0.011: Stat File Version 1.0 personality successfully loaded
+0.011: Populating and pre-allocating filesets
+0.016: bigfileset populated: 10000 files, avg. dir. width = 20, avg. dir. depth = 3.1, 0 leafdirs, 1250.000MB total size
+0.016: Removing bigfileset tree (if exists)
+0.019: Pre-allocating directories in bigfileset tree
+0.046: Pre-allocating files in bigfileset tree
+1.458: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+1.458: Population and pre-allocation of filesets completed
+1.458: Starting 1 examinefiles instances
+2.462: Running...
+122.480: Run took 120 seconds...
+122.480: Per-Operation Breakdown
+statfile1            67834220ops   565198ops/s   0.0mb/s    0.002ms/op [0.001ms - 0.137ms]
+122.480: IO Summary: 67834220 ops 565197.759 ops/s 0/0 rd/wr   0.0mb/s 0.002ms/op
+122.480: Shutting down processes
